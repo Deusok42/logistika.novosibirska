@@ -1,0 +1,177 @@
+body{
+    background-color: rgb(220, 243, 255);
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.head{
+    width: 100%;
+    height: 650px;
+    background-image: url('../banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    border: solid 3px black;
+    border-radius: 0 0 0 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.header-left{
+    height: 100%;
+    width: 60%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.header-right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.header-image{
+    height: 100%;
+    width: 150px;
+    margin-left: 25px;
+}
+.head-text{
+    margin: auto;
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#head-h{
+    font-size: 60px;
+    margin: 15px;
+}
+#head-p{
+    font-size: 26px;
+}
+#head-a{
+    font-size: 42px;
+    font-weight: bold;
+}
+.title{
+    font-size: 42px;
+    margin: 25px 0;
+}
+.subtitle{
+    font-size: 24px;
+    margin: 15px 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+.advants{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.advant-block{
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: aliceblue;
+    box-shadow: gray 3px 4px;
+    transition: 300ms;
+}
+.advant-block:hover{
+    transform: scale(1.1);
+}
+.advant-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.advant-title{
+    font-size: 42px;
+}
+.advant-subtitle{
+    font-size: 28px;
+    margin: 15px;
+}
+.advant-image1{
+    width: 150px;
+    height: 150px;
+    background-image: url(../reliability.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.advant-image2{
+    width: 150px;
+    height: 150px;
+    background-image: url(../speed.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.advant-image3{
+    width: 150px;
+    height: 150px;
+    background-image: url(../support.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hr{
+    width: 90%;
+    height: 1px;
+    background-color: black;
+}
+.contacts{
+    width: 688px;
+    height: 420px;
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.contacts-title{
+    font-size: 42px;
+}
+.contact-title{
+    width: 200px;
+    font-size: 36px;
+    margin: 10px 10px
+}
+.contact-subtitle{
+    font-size: 24px;
+}
+p{
+    margin: 0 10px;
+}
+.contact-icon{
+    margin: 15px 0 0 15px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}

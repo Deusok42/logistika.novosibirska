@@ -1,0 +1,231 @@
+body{
+    background-color: rgb(170, 209, 248);
+    font-family: Arial;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    border: solid 3px black;
+    border-radius: 0 0 0 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.header-left{
+    height: 100%;
+    width: 60%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.header-right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.header-image{
+    height: 100%;
+    width: 150px;
+    margin-left: 25px;
+}
+.title{
+    font-size: 42px;
+    margin: 25px 0;
+}
+.subtitle{
+    font-size: 24px;
+    margin: 15px 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+p{
+    font-size: 20px;
+}
+.body{
+    padding: 15px 15px;
+    width: 70%;
+    height: auto;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: azure;
+    border: 2px solid black;
+}
+#ss{
+    color: black;
+    font-size: 38px;
+    transition: 300ms;
+}
+#ss:hover{
+    transform: scale(1.1);
+    color: gray;
+}
+.hr{
+    width: 90%;
+    height: 1px;
+    background-color: gray;
+}
+.workers{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+.half1{
+    display: flex;
+    flex-direction: row;
+}
+.half2{
+    display: flex;
+    flex-direction: row;
+}
+.half3{
+    display: flex;
+    flex-direction: row;
+}
+.worker{
+    margin: 15px;
+}
+.ss-button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #2c2c2c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 0 0 25px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.gallery{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+.gallery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.image-caption{
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: bottom 0.8s ease-in-out;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item:hover .image-caption{
+    bottom: 0;
+}
+
+
+.caption-title{
+    margin: 0;
+    font-size: 24;
+    font-weight: bold;
+}
+
+.caption-text{
+    margin: 10px 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.nav-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+#prevButton{
+    left: 20px;
+}
+
+#nextButton{
+    right: 20px;
+}
+.about-us p{
+    font-size: 20px;
+}
+.company-history p{
+    font-size: 22px;
+}
+.company-history{
+    animation: fadeIn 1s ease-in-out;
+}
+.about-us{
+    animation: fadeIn 1s ease-in-out;
+}
